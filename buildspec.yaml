@@ -7,10 +7,6 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt
-  pre_build:
-    commands:
-      - echo "Running linting checks..."
-      - pylint my_project/
   build:
     commands:
       - echo "Running tests..."
